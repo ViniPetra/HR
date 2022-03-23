@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace HR
 {
-    internal class Funcionário
+    internal class Funcionario
     {
-        public int id { get;  set; }
-        public string nome { get;  set; }
-        public string cpf { get;  set; }
-        public Endereco endereco { get;  set; }
+        public int id { get;  private set; }
+        public string nome { get;  private set; }
+        public string cpf { get;  private set; }
+        public Endereco endereco { get;  private set; }
 
-        public Funcionário(int id, string nome, string cpf, Endereco endereco)
+        public Funcionario(int id, string nome, string cpf, Endereco endereco)
         {
             this.id = id;
             this.nome = nome;
