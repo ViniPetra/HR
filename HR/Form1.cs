@@ -35,7 +35,7 @@ namespace HR
 
         private void btnMaisInfo_Click(object sender, EventArgs e)
         {
-            Form frmMaisInformacoes = new frmMaisInfo();
+            frmMaisInfo frmMaisInformacoes = new frmMaisInfo(listaFuncionarios[cbxFuncionarios.SelectedIndex]);
             frmMaisInformacoes.ShowDialog();
         }
     }

@@ -12,10 +12,11 @@ namespace HR
 {
     public partial class frmMaisInfo : Form
     {
-        public string nome { get; private set; }
-        public frmMaisInfo(string nome)
+        public Funcionario funcionario { get; private set; }
+        public frmMaisInfo(Funcionario generico)
         {
             InitializeComponent();
+            lblTeste.Text = generico.nome;
         }
     }
 }

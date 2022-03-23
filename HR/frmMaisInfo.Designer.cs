@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTeste = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // lblTeste
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(345, 208);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(13, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "a";
+            this.lblTeste.AutoSize = true;
+            this.lblTeste.Location = new System.Drawing.Point(345, 208);
+            this.lblTeste.Name = "lblTeste";
+            this.lblTeste.Size = new System.Drawing.Size(13, 13);
+            this.lblTeste.TabIndex = 0;
+            this.lblTeste.Text = "a";
             // 
             // frmMaisInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTeste);
             this.Name = "frmMaisInfo";
             this.Text = "frmMaisInfo";
             this.ResumeLayout(false);
@@ -55,6 +55,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTeste;
     }
 }
