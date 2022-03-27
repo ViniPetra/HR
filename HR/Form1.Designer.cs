@@ -192,7 +192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(266, 267);
+            this.ClientSize = new System.Drawing.Size(266, 293);
             this.Controls.Add(this.btnMaisInfo);
             this.Controls.Add(this.cbxFuncionarios);
             this.Controls.Add(this.btnSalvar);

@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace HR
 {
     public partial class Form1 : Form
     {
         List<Funcionario> listaFuncionarios;
+        Thread thread;
         public Form1()
         {
             InitializeComponent();
@@ -35,8 +37,20 @@ namespace HR
 
         private void btnMaisInfo_Click(object sender, EventArgs e)
         {
+            thread = new Thread(OpenForm);
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
+            this.Close();
+            /*
             frmMaisInfo frmMaisInformacoes = new frmMaisInfo(listaFuncionarios[cbxFuncionarios.SelectedIndex]);
             frmMaisInformacoes.ShowDialog();
+            this.Close();
+            */
+        }
+
+        private void OpenForm()
+        {
+            Application.Run(new frmMaisInfo(listaFuncionarios[cbxFuncionarios.SelectedIndex]));
         }
     }
 }

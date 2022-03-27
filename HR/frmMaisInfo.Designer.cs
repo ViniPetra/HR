@@ -28,24 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTeste = new System.Windows.Forms.Label();
+            this.btnReturn = new System.Windows.Forms.Button();
+            this.lblGen = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lblTeste
+            // btnReturn
             // 
-            this.lblTeste.AutoSize = true;
-            this.lblTeste.Location = new System.Drawing.Point(345, 208);
-            this.lblTeste.Name = "lblTeste";
-            this.lblTeste.Size = new System.Drawing.Size(13, 13);
-            this.lblTeste.TabIndex = 0;
-            this.lblTeste.Text = "a";
+            this.btnReturn.Location = new System.Drawing.Point(161, 151);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(75, 23);
+            this.btnReturn.TabIndex = 1;
+            this.btnReturn.Text = "button1";
+            this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
+            // lblGen
+            // 
+            this.lblGen.AutoSize = true;
+            this.lblGen.Location = new System.Drawing.Point(161, 92);
+            this.lblGen.Name = "lblGen";
+            this.lblGen.Size = new System.Drawing.Size(35, 13);
+            this.lblGen.TabIndex = 2;
+            this.lblGen.Text = "label1";
             // 
             // frmMaisInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblTeste);
+            this.ClientSize = new System.Drawing.Size(428, 338);
+            this.Controls.Add(this.lblGen);
+            this.Controls.Add(this.btnReturn);
             this.Name = "frmMaisInfo";
             this.Text = "frmMaisInfo";
             this.ResumeLayout(false);
@@ -55,6 +67,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblTeste;
+        private System.Windows.Forms.Button btnReturn;
+        private System.Windows.Forms.Label lblGen;
     }
 }
