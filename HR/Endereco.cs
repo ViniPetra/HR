@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace HR
 {
-    internal class Endereco
+    public class Endereco
     {
-        public string rua { get;  set; }
-        public string numero { get;  set; }
-        public string complemento { get;  set; }
-        public string cep { get;  set; }
+        public string rua { get;  private set; }
+        public string numero { get; private set; }
+        public string complemento { get; private set; }
+        public string cep { get; private set; }
 
         public Endereco(string rua, string numero, string complemento, string cep)
         {
